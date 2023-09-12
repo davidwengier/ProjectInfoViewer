@@ -1,0 +1,4 @@
+[submodule ".razor"]
+	path = .razor
+	url = https://github.com/DustinCampbell/razor
+	branch = message-pack-config-file
