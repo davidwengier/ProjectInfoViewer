@@ -5,4 +5,13 @@
 <h1>Project Info Viewer</h1>
 
 Select a project info file (.bin) to open:
-<input type="file" />
+<InputFile OnChange="HandleProjectInfoFileSelected" />
+
+@code
+{
+    public void HandleProjectInfoFileSelect(InputFileChangeEventArgs e)
+    {
+        using var stream = e.File.OpenReadStream();
+
+    }
+}
